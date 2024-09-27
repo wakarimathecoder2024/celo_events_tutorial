@@ -273,7 +273,8 @@ This is the name of user defined data type
 
 **uint256**
 
-This a data type that stands for unsigned integer .
+This a data type that stands for unsigned integer
+
 **string**
 This field  allow  text-based input.
 
@@ -283,3 +284,115 @@ The type of address payable owner  stores the address of the owner. The payable 
 
 **bool**
 It stands for true or false
+
+### Functions
+
+```
+    // Function to create a new event
+    function createEvent(
+        string memory _nameofevent,
+        uint256 _startDate,
+        uint256 _endDate,
+        uint256 _price,
+        string memory _description,
+        uint256 _total_tickets,
+        bool _isrefundable,
+        address _celo
+    ) external {
+        require(
+            _startDate > block.timestamp,
+            "Start date must be in the future"
+        );
+        require(_endDate > _startDate, "End date must be after start date");
+        require(_price > 1, "price must be not below zero");
+        require(
+            _total_tickets > 10,
+            "number of tickets should be more than 10"
+        );
+        uint256 eventId = uint256(
+            keccak256(abi.encodePacked(block.timestamp, _nameofevent))
+        ) % 1000000;
+        _events[eventId] = Event({
+            name: _nameofevent,
+            startDate: _startDate,
+            endDate: _endDate,
+            price: _price,
+            isActive: true,
+            owner: msg.sender,
+            description: _description,
+            event_id: eventId,
+            total_tickets: _total_tickets,
+            isrefundable: _isrefundable,
+            celoaddress: payable(_celo)
+        });
+        eventscount++;
+        emit NewEventCreated(
+            eventId,
+            _nameofevent,
+            _description,
+            _startDate,
+            _endDate
+        );
+    }
+```
+This function is responsible for creating a new event. Here’s the detailed explanation:
+**external:** This function can be called from outside the contract, meaning that other contracts or external accounts can invoke it.
+
+**Parameters:** This function takes the following parameters _nameofevent, _startDate,_endDate,_price, _description,_total_tickets,isrefundable,_celo, _price:
+Function Body
+**Input Validations**
+The function includes several require statements to validate the input parameters:
+```
+require(
+    _startDate > block.timestamp,
+    "Start date must be in the future"
+);
+```
+Ensures the event's start date is in the future.
+
+The **require()** statement in Solidity is a way to enforce conditions or validations within a smart contract function. If the condition specified in a require statement evaluates to false, the transaction will be reverted, and any state changes made during the transaction will be undone.
+
+** Event ID Generation**
+```
+uint256 eventId = uint256(
+    keccak256(abi.encodePacked(block.timestamp, _nameofevent))
+) % 1000000;
+```
+Generates a unique event ID using a hash of the current block timestamp and the event name. The result is taken modulo 1,000,000 to keep the ID within a manageable range.
+
+**Storing the Event**
+```
+_events[eventId] = Event({
+    name: _nameofevent,
+    startDate: _startDate,
+    endDate: _endDate,
+    price: _price,
+    isActive: true,
+    owner: msg.sender,
+    description: _description,
+    event_id: eventId,
+    total_tickets: _total_tickets,
+    isrefundable: _isrefundable,
+    celoaddress: payable(_celo)
+});
+```
+Stores the new event in the _events mapping using the generated eventId. The event is initialized with all the provided parameters, including the owner’s address (msg.sender).
+
+** Incrementing Event Count**
+```
+eventscount++;
+```
+Increments the eventscount variable to keep track of the total number of events created.
+
+** Emitting an Event**
+```
+emit NewEventCreated(
+    eventId,
+    _nameofevent,
+    _description,
+    _startDate,
+    _endDate
+);
+```
+Emits the NewEventCreated event, signaling that a new event has been successfully created. This provides external applications with a way to react to the creation of new events.
+
