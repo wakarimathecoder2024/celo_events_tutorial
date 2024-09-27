@@ -1,4 +1,5 @@
 // SPDX-License-Identifier: MIT
+
 pragma solidity ^0.8.0;
 
 interface IERC20Token {
@@ -27,6 +28,7 @@ interface IERC20Token {
 }
 
 contract Events {
+    
     uint256 private eventscount = 0;
     // Mapping of events
     mapping(uint256 => Event) private _events;
