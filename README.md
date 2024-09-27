@@ -154,6 +154,7 @@ The line **contract Events {}** defines an empty Solidity contract named Events.
 **contract Keyword:**
 
 This keyword is used to define a new contract in Solidity. A contract in Ethereum is similar to a class in object-oriented programming; it encapsulates data and functions.
+
 **Events:**
 
 This is the name of the contract. Naming conventions typically use PascalCase, and it's common to name contracts based on their functionality.
@@ -215,7 +216,7 @@ Let’s break down the code snippet provided above, which defines some component
 
 ##### Components Explained
 
-###### 1. State Variables**
+###### 1. State Variables
 
 **uint256 private eventscount = 0;**
 
@@ -233,7 +234,7 @@ This mapping tracks bookings made by users. It maps a user's Ethereum address to
 Events serves as notifications that occur when specific actions take place within the contract.
 It helps external applications (like dApps) listen for and respond to new events being added to the system.
 example
-````
+```
   event BookingMade(
         address indexed user,
         uint256 indexed eventId,
