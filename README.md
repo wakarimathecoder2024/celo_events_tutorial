@@ -56,4 +56,10 @@ Overall, Celo aims to create a more inclusive financial system by leveraging the
    
  - Familiarity with Remix IDE(https://remix.ethereum.org/): We will use Remix IDE for coding and testing our smart contract. Basic navigation skills will be helpful.
 
+## Developing our Smart Contract
+
+In this section, we will explore a Celo smart contract written in Solidity for events .
+
+First, open your browser and go to **Remix IDE**. This online development environment will allow us to write, test, and deploy our smart contract.
+
 
