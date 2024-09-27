@@ -38,3 +38,22 @@ Developers can build dApps on Celo, leveraging its mobile-first capabilities and
 
 
 Overall, Celo aims to create a more inclusive financial system by leveraging the accessibility of mobile technology and the benefits of blockchain.
+
+## Prerequisites
+
+- Basic Understanding of Blockchain Concepts: Familiarity with how blockchains operate and their key features.
+  
+- Understanding of Smart Contracts: Know what smart contracts are and how they function within a blockchain environment.
+  
+- Knowledge of Solidity: A foundational grasp of Solidity and its core concepts. Click here to learn more about Solidity.
+  
+
+## Requirements
+
+ - Stable Internet Connection: Since we will be coding online, a reliable internet connection is essential.
+   
+ - Celo Extension Wallet: Install the Celo Wallet extension for your browser to manage your Celo assets.
+   
+ - Familiarity with Remix IDE(https://remix.ethereum.org/): We will use Remix IDE for coding and testing our smart contract. Basic navigation skills will be helpful.
+
+
