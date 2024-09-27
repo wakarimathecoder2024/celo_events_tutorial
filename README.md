@@ -760,19 +760,21 @@ To test the smart contract vist [remix](https://docs.celo.org/developer/deploy/r
 To create a contract go to remix ide and  create a new file for your Solidity smart contract in Remix like ours we will name it as 
 *events.sol* and paste the code above.
 
-![Alt Text](./images/first.png)
+![Alt Text](./images/m1.png)
 
+Go to your celo wallet that is Alfajores Test Network and copy the address and paste it on [faucet](https://faucet.celo.org/alfajores) to claim free test tokens
+![Alt Text](./images/m3.png)
 ### To Compile Contract:
 
 Click on the "Solidity Compiler" tab in the sidebar and select the appropriate compiler version for your contract. Click "Compile" to compile your contract code.
 
-![Alt Text](./images/second.png)
+![Alt Text](./images/m6.png)
 Go to your celo wallet that is Alfajores Test Network and copy the address
-![Alt Text](./images/third.png)
+![Alt Text](./images/m5.png)
 After copying celo wallet address paste it to the space next to deploy button
-![Alt Text](./images/fourth.png)
+![Alt Text](./images/m6.png)
 if your smart have deployed successfully you will see this
-![Alt Text](./images/fifth.png)
+![Alt Text](./images/m4.png)
 
 ### Conclusion
 In this tutorial, we've explored the process of building a events smart contract on the Celo blockchain using Solidity. We’ve learned about various components of the contract, including:
