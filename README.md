@@ -378,13 +378,13 @@ _events[eventId] = Event({
 ```
 Stores the new event in the _events mapping using the generated eventId. The event is initialized with all the provided parameters, including the owner’s address (msg.sender).
 
-** Incrementing Event Count**
+**Incrementing Event Count**
 ```
 eventscount++;
 ```
 Increments the eventscount variable to keep track of the total number of events created.
 
-** Emitting an Event**
+**Emitting an Event**
 ```
 emit NewEventCreated(
     eventId,
