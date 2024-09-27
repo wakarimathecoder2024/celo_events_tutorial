@@ -753,3 +753,36 @@ contract Events {
     }
 }
 ```
+
+## Testing And Deploying the Smart Contract
+
+To test the smart contract vist [remix](https://docs.celo.org/developer/deploy/remix). Install celo extension wallet from chromestore for chrome users.
+To create a contract go to remix ide and  create a new file for your Solidity smart contract in Remix like ours we will name it as 
+*events.sol* and paste the code above.
+
+![Alt Text](./images/first.png)
+
+### To Compile Contract:
+
+Click on the "Solidity Compiler" tab in the sidebar and select the appropriate compiler version for your contract. Click "Compile" to compile your contract code.
+
+![Alt Text](./images/second.png)
+Go to your celo wallet that is Alfajores Test Network and copy the address
+![Alt Text](./images/third.png)
+After copying celo wallet address paste it to the space next to deploy button
+![Alt Text](./images/fourth.png)
+if your smart have deployed successfully you will see this
+![Alt Text](./images/fifth.png)
+
+### Conclusion
+In this tutorial, we've explored the process of building a events smart contract on the Celo blockchain using Solidity. We’ve learned about various components of the contract, including:
+
+**Structs**: Used to represent complex data types such as events and bookings, allowing us to encapsulate related information in a single unit.
+
+**Mappings**: Employed for efficiently storing and retrieving data, such as event details and user bookings, by associating unique identifiers with specific values.
+
+**Events**: Used for logging significant occurrences within the contract, providing transparency and enabling external applications to react to important changes (e.g., ticket bookings and event updates).
+
+**Functions**: Implemented to handle various functionalities, including creating events, booking tickets, checking availability, and deleting events. Each function includes necessary validations to maintain the integrity of the contract.
+
+By understanding these components and their interactions, you can effectively manage events and ticket sales on the Celo blockchain, leveraging its capabilities for decentralized applications. This foundation can be expanded upon to incorporate additional features or integrate with front-end interfaces for a complete user experience.
