@@ -10,45 +10,58 @@
 - [Conclusion](#conclusion)
 
 ## Introduction
- In this tutorial, we will guide you through the process of building a smart contract on the Celo blockchain, specifically focusing on an event-driven smart contract. Celo is designed with mobile-first principles, and it's built to provide a stable, fast, and scalable environment for decentralized applications (dApps).
+ In this tutorial, we will guide you through the process of building a smart contract on the Celo blockchain, specifically focusing on an event-driven smart contract. 
+ Celo is designed with mobile-first principles, and it's built to provide a stable, fast, and scalable environment for decentralized applications (dApps).
 
-This tutorial assumes that you have a basic understanding of Ethereum and Solidity since Celo is EVM-compatible. This means you can use many Ethereum tools and libraries to develop on Celo. However, Celo introduces several unique features that make it stand out, especially for mobile use.
+ This tutorial assumes that you have a basic understanding of Ethereum and Solidity since Celo is EVM-compatible. This means you can use many Ethereum tools and 
+ libraries to develop on Celo. However, Celo introduces several unique features that make it stand out, especially for mobile use.
 
 ## What is Celo
 
 Celo is a blockchain platform designed specifically for mobile devices and focused on making cryptocurrency accessible to everyone. 
 The following summary captures Celo's key strengths very well. Let me expand on each of these features to provide a deeper understanding of what makes Celo a unique and powerful blockchain platform:
 1. ##### Mobile-First Design: 
-Celo’s main innovation is its emphasis on mobile devices. While many blockchain platforms are designed for desktop use, Celo’s infrastructure is optimized for mobile, which is vital in regions where smartphones are the primary means of internet access. This allows users with limited technical expertise and access to traditional banking services to send and receive payments with ease. Celo achieves this through features like lightweight mobile wallets that don’t require users to run a full node, and by allowing users to send crypto using phone numbers instead of cryptographic addresses, making transactions more user-friendly.
+   Celo’s main innovation is its emphasis on mobile devices. While many blockchain platforms are designed for desktop use, Celo’s infrastructure is optimized for mobile, 
+   which is vital in regions where smartphones are the primary means of internet access. This allows users with limited technical expertise and access to traditional 
+   banking services to send and receive payments with ease. Celo achieves this through features like lightweight mobile wallets that don’t require users to run a full 
+   node, and by allowing users to send crypto using phone numbers instead of cryptographic addresses, making transactions more user-friendly.
 
 2. ##### Stablecoins:
-Celo has built-in support for stablecoins, such as cUSD (Celo Dollar), which are pegged to the value of their respective fiat currencies. Stablecoins offer several benefits:
+   Celo has built-in support for stablecoins, such as cUSD (Celo Dollar), which are pegged to the value of their respective fiat currencies. Stablecoins offer several 
+   benefits:
 
-. ###### Stable Value
-Reduces the volatility commonly associated with cryptocurrencies like Bitcoin or Ethereum, making them more practical for everyday transactions.
+.  ###### Stable Value
+   the volatility commonly associated with cryptocurrencies like Bitcoin or Ethereum, making them more practical for everyday transactions.
 
-. ###### User Adoption
-Pegging to familiar fiat currencies encourages users to adopt and integrate stablecoins into their daily financial lives.
+.  ###### User Adoption
+   Pegging to familiar fiat currencies encourages users to adopt and integrate stablecoins into their daily financial lives.
 
-. ###### Efficient Remittances
-Users can send stablecoins across borders with minimal fees, addressing challenges in regions where remittances are crucial for income.
+.  ###### Efficient Remittances
+   Users can send stablecoins across borders with minimal fees, addressing challenges in regions where remittances are crucial for income.
 
-. ##### Scalability and Speed:
-Celo’s Proof of Stake (PoS) consensus mechanism enables fast and scalable transactions. Unlike Proof of Work (PoW), PoS is much more efficient in terms of both speed and resource usage. Celo’s network can handle a significant number of transactions per second (TPS) at lower fees, which is essential for supporting a high volume of microtransactions often required in mobile payments. Additionally, Celo’s PoS allows participants to stake tokens and earn rewards, fostering a decentralized and secure network.
+.  ##### Scalability and Speed:
+   Celo’s Proof of Stake (PoS) consensus mechanism enables fast and scalable transactions. Unlike Proof of Work (PoW), PoS is much more efficient in terms of both speed 
+   and resource usage. Celo’s network can handle a significant number of transactions per second (TPS) at lower fees, which is essential for supporting a high volume of 
+   microtransactions often required in mobile payments. Additionally, Celo’s PoS allows participants to stake tokens and earn rewards, fostering a decentralized and 
+   secure network.
 
 3. ##### Eco-Friendly: 
-With growing concerns over the environmental impact of blockchain technology (particularly PoW blockchains like Bitcoin, which require large amounts of computational power), Celo’s PoS approach is designed to be energy-efficient. This positions Celo as a greener alternative, aligning with the increasing demand for eco-friendly technology.
+   With growing concerns over the environmental impact of blockchain technology (particularly PoW blockchains like Bitcoin, which require large amounts of computational 
+   power), Celo’s PoS approach is designed to be energy-efficient. This positions Celo as a greener alternative, aligning with the increasing demand for eco-friendly 
+   technology.
 
 4. ##### Decentralized Applications (dApps): 
-Celo enables developers to build decentralized applications (dApps) that leverage the platform’s mobile-first approach and stablecoin features. This opens up possibilities for various use cases, including:
+   Celo enables developers to build decentralized applications (dApps) that leverage the platform’s mobile-first approach and stablecoin features. This opens up 
+   possibilities for various use cases, including:
 
-. ######  Micro-lending platforms That provide users in underbanked regions access to credit.
+.  ######  Micro-lending platforms That provide users in underbanked regions access to credit.
 
-. ###### 2. Remittance services
-That allow users to send funds internationally in a matter of seconds.
+.  ###### 2. Remittance services
+   That allow users to send funds internationally in a matter of seconds.
 
 5. ###### 3. DeFi
-Decentralized finance services that can cater to mobile users globally. Celo’s developer ecosystem supports Ethereum tools like Solidity and Truffle, making it easy for Ethereum developers to transition to Celo.
+   Decentralized finance services that can cater to mobile users globally. Celo’s developer ecosystem supports Ethereum tools like Solidity and Truffle, making it easy 
+   for Ethereum developers to transition to Celo.
 
 
 Overall, Celo aims to create a more inclusive financial system by leveraging the accessibility of mobile technology and the benefits of blockchain.
