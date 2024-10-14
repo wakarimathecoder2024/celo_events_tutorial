@@ -97,7 +97,7 @@ Create a new file and name it events.sol and Copy and paste the following code i
 **pragma solidity ^0.8.0** This line specifies the version of Solidity that the code is compatible with.
 ^0.8.0 means that the code is compatible with version 0.8.0 and any later version up to (but not including) 0.9.0. The caret (^) allows for automatic updates to newer minor versions while ensuring backwards compatibility.
 
-```
+```solidity
 interface IERC20Token {
 function transfer(address, uint256) external returns (bool);
 
