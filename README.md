@@ -10,9 +10,9 @@
 - [Conclusion](#conclusion)
 
 ## Introduction
-Welcome to this in-depth tutorial on creating a smart contract in Solidity on Celo Blockchain. In this guide, we’ll take you step-by-step through the process of building a an event smart contract.First celo is designed with mobile users in mind and emphasizes stability and scalability, making it an ideal platform for decentralized applications.
+ In this tutorial, we will guide you through the process of building a smart contract on the Celo blockchain, specifically focusing on an event-driven smart contract. Celo is designed with mobile-first principles, and it's built to provide a stable, fast, and scalable environment for decentralized applications (dApps).
 
-This tutorial assumes you have a foundational understanding of Ethereum and Solidity. While Celo shares many core concepts with Ethereum, it also introduces unique features tailored for efficient mobile use.
+This tutorial assumes that you have a basic understanding of Ethereum and Solidity since Celo is EVM-compatible. This means you can use many Ethereum tools and libraries to develop on Celo. However, Celo introduces several unique features that make it stand out, especially for mobile use.
 
 ## What is Celo
 
