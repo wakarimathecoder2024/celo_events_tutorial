@@ -30,7 +30,7 @@ The following summary captures Celo's key strengths very well. Let me expand on 
    Celo has built-in support for stablecoins, such as cUSD (Celo Dollar), which are pegged to the value of their respective fiat currencies. Stablecoins offer several 
    benefits:
 
-.  ###### Stable Value
+▪  ###### Stable Value
    the volatility commonly associated with cryptocurrencies like Bitcoin or Ethereum, making them more practical for everyday transactions.
 
 .  ###### User Adoption
