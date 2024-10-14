@@ -86,7 +86,7 @@ In this section, we will explore a Celo smart contract written in Solidity for e
 First, open your browser and go to **Remix IDE**. This online development environment will allow us to write, test, and deploy our smart contract.
 
 Create a new file and name it events.sol and Copy and paste the following code into the file:
-```
+```solidity
     // SPDX-License-Identifier: GPL-3.0
 
      pragma solidity ^0.8.0;
@@ -182,7 +182,7 @@ This keyword is used to define a new contract in Solidity. A contract in Ethereu
 
 This is the name of the contract. Naming conventions typically use PascalCase, and it's common to name contracts based on their functionality.
 
-```
+```solidity
    uint256 private eventscount = 0;
     // Mapping of events
     mapping(uint256 => Event) private _events;
@@ -257,7 +257,7 @@ This mapping tracks bookings made by users. It maps a user's Ethereum address to
 Events serves as notifications that occur when specific actions take place within the contract.
 It helps external applications (like dApps) listen for and respond to new events being added to the system.
 example
-```
+```solidity
   event BookingMade(
         address indexed user,
         uint256 indexed eventId,
@@ -276,7 +276,7 @@ This is a custom data type that allows you to group together variables of diffre
 This struct defines the data types of an event:
 
 example
-```
+```solidity
    struct Event {
         string name;
         uint256 startDate;
@@ -310,7 +310,7 @@ It stands for true or false
 
 ### Functions
 
-```
+```solidity
     // Function to create a new event
     function createEvent(
         string memory _nameofevent,
@@ -365,7 +365,7 @@ This function is responsible for creating a new event. Here’s the detailed exp
 Function Body
 **Input Validations**
 The function includes several require statements to validate the input parameters:
-```
+```solidity
 require(
     _startDate > block.timestamp,
     "Start date must be in the future"
@@ -376,7 +376,7 @@ Ensures the event's start date is in the future.
 The **require()** statement in Solidity is a way to enforce conditions or validations within a smart contract function. If the condition specified in a require statement evaluates to false, the transaction will be reverted, and any state changes made during the transaction will be undone.
 
 ** Event ID Generation**
-```
+```solidity
 uint256 eventId = uint256(
     keccak256(abi.encodePacked(block.timestamp, _nameofevent))
 ) % 1000000;
@@ -384,7 +384,7 @@ uint256 eventId = uint256(
 Generates a unique event ID using a hash of the current block timestamp and the event name. The result is taken modulo 1,000,000 to keep the ID within a manageable range.
 
 **Storing the Event**
-```
+```solidity
 _events[eventId] = Event({
     name: _nameofevent,
     startDate: _startDate,
@@ -402,13 +402,13 @@ _events[eventId] = Event({
 Stores the new event in the _events mapping using the generated eventId. The event is initialized with all the provided parameters, including the owner’s address (msg.sender).
 
 **Incrementing Event Count**
-```
+```solidity
 eventscount++;
 ```
 Increments the eventscount variable to keep track of the total number of events created.
 
 **Emitting an Event**
-```
+```solidity
 emit NewEventCreated(
     eventId,
     _nameofevent,
@@ -419,7 +419,7 @@ emit NewEventCreated(
 ```
 Emits the NewEventCreated event, signaling that a new event has been successfully created. This provides external applications with a way to react to the creation of new events.
 
-```
+```solidity
  function updateEvent(
         uint256 _eventId,
         uint256 _newStartDate,
@@ -454,7 +454,8 @@ Emits the NewEventCreated event, signaling that a new event has been successfull
 ```
 The updateEvent function allows the owner of an event to update various details, such as the start and end dates, price, description, and refund policy. It includes robust input validation to ensure that only valid updates are made and that only the event owner can perform the update. By emitting an event after making changes, it provides transparency for users interacting with the smart contract.
 
-```// Function to delete an event
+```solidity
+ // Function to delete an event
     function deleteEvent(uint256 _eventId) public {
         require(
             msg.sender == _events[_eventId].owner,
@@ -468,7 +469,7 @@ The updateEvent function allows the owner of an event to update various details,
 ```
 The deleteEvent function allows the owner of an event to delete it from the contract. It ensures that only the event owner can perform this action and that the event is currently active. By emitting an event before deletion, it provides a way to track the removal of events on the blockchain. Finally, it updates the count of total events to keep the state consistent.
 
-```
+```solidity
   //function to getallevents
     function getAllEvents() public view returns (Event[] memory) {
         uint256 eventCount = eventscount;
@@ -483,7 +484,8 @@ The deleteEvent function allows the owner of an event to delete it from the cont
 ```
 The getAllEvents function provides a way for users to retrieve all the events stored in the contract. It creates an array in memory, populates it with event data, and returns it. However, be aware that this implementation assumes events are indexed sequentially, which may not hold true if events have been deleted.
 
-```  //search for a single event
+```solidity
+ //search for a single event
     function getdetailsofAnEvent(uint256 event_id)
         public
         view
@@ -494,7 +496,8 @@ The getAllEvents function provides a way for users to retrieve all the events st
 ```
 The getdetailsofAnEvent function provides a straightforward way to access the details of a specific event using its ID. It returns the entire Event struct, allowing the caller to see all the relevant information about that event.
 
-``` // Function to book tickets
+```solidity
+// Function to book tickets
     function buytickets(uint256 _eventId) external {
         require(
             _events[_eventId].total_tickets > 1,
@@ -530,7 +533,8 @@ The buytickets function allows users to purchase tickets for a specific event, e
 - It emits an event to signal that a booking has been made.
 This function encapsulates the logic needed for ticket purchasing while ensuring that the necessary validations are in place to protect the integrity of the ticketing system
 
-```   // Function to check availability of tickets
+```solidity
+  // Function to check availability of tickets
     function checkAvailability(uint256 _eventId)
         external
         view
@@ -544,7 +548,7 @@ This function encapsulates the logic needed for ticket purchasing while ensuring
 The checkAvailability function provides a way for users to query how many tickets are still available for a specific event. It ensures that only active events can be queried and returns the number of available tickets. This is useful for users wanting to know if they can purchase tickets for an event before attempting to do so.
 
 here is the full code
-```
+```solidity
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.0;
 
