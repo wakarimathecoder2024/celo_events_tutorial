@@ -30,16 +30,16 @@ The following summary captures Celo's key strengths very well. Let me expand on 
    Celo has built-in support for stablecoins, such as cUSD (Celo Dollar), which are pegged to the value of their respective fiat currencies. Stablecoins offer several 
    benefits:
 
-       ▪ Stable Value -the volatility commonly associated with cryptocurrencies like Bitcoin or Ethereum, making them more practical for everyday transactions.
+    ▪ Stable Value: the volatility commonly associated with cryptocurrencies like Bitcoin or Ethereum, making them more practical for everyday transactions.
 
-       ▪ User Adoption -Pegging to familiar fiat currencies encourages users to adopt and integrate stablecoins into their daily financial lives.
+    ▪ User Adoption: Pegging to familiar fiat currencies encourages users to adopt and integrate stablecoins into their daily financial lives.
 
-       ▪ Efficient Remittances -Users can send stablecoins across borders with minimal fees, addressing challenges in regions where remittances are crucial for income.
+    ▪ Efficient Remittances: Users can send stablecoins across borders with minimal fees, addressing challenges in regions where remittances are crucial for income.
 
-       ▪ Scalability and Speed -Celo’s Proof of Stake (PoS) consensus mechanism enables fast and scalable transactions. Unlike Proof of Work (PoW), PoS is much more 
-         efficient in terms of both speed and resource usage. Celo’s network can handle a significant number of transactions per second (TPS) at lower fees, which is 
-         essential for supporting a high volume of microtransactions often required in mobile payments. Additionally, Celo’s PoS allows participants to stake tokens and 
-         earn rewards, fostering a decentralized and secure network.
+    ▪ Scalability and Speed: Celo’s Proof of Stake (PoS) consensus mechanism enables fast and scalable transactions. Unlike Proof of Work (PoW), PoS is much more 
+      efficient in terms of both speed and resource usage. Celo’s network can handle a significant number of transactions per second (TPS) at lower fees, which is 
+      essential for supporting a high volume of microtransactions often required in mobile payments. Additionally, Celo’s PoS allows participants to stake tokens and 
+      earn rewards, fostering a decentralized and secure network.
 
 3. ##### Eco-Friendly: 
    With growing concerns over the environmental impact of blockchain technology (particularly PoW blockchains like Bitcoin, which require large amounts of computational 
