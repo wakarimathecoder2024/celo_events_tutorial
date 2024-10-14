@@ -169,7 +169,7 @@ Purpose: This event is emitted when the approve function is called, indicating t
 ### Summary of IERC20
 The IERC20Token interface defines the core functions and events necessary for any ERC-20 token implementation, ensuring standardization and interoperability within the Ethereum ecosystem. Implementing this interface allows other contracts and applications to interact with the token seamlessly.
 
-```
+```solidity
   contract Events {}
 ```
 The line **contract Events {}** defines an empty Solidity contract named Events. Here’s a breakdown of the components:
@@ -439,7 +439,7 @@ Emits the NewEventCreated event, signaling that a new event has been successfull
             "End date must be after start date"
         );
         require(
-            _events[_eventId].owner != msg.sender,
+            _events[_eventId].owner == msg.sender,
             "only owner is parmitted to this action"
         );
         _events[_eventId].startDate = _newStartDate;
@@ -696,7 +696,7 @@ contract Events {
             "End date must be after start date"
         );
         require(
-            _events[_eventId].owner != msg.sender,
+            _events[_eventId].owner == msg.sender,
             "only owner is parmitted to this action"
         );
         _events[_eventId].startDate = _newStartDate;
