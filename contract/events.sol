@@ -145,7 +145,7 @@ contract Events {
             "End date must be after start date"
         );
         require(
-            _events[_eventId].owner != msg.sender,
+            _events[_eventId].owner == msg.sender,
             "only owner is parmitted to this action"
         );
         _events[_eventId].startDate = _newStartDate;
