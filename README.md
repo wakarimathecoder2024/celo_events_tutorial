@@ -124,10 +124,10 @@ function transfer(address, uint256) external returns (bool);
 
 }
 ```
-###### Overview
+### Overview
 The ERC-20 standard is a widely adopted standard for fungible tokens on the Ethereum blockchain. This interface outlines the essential methods and events that any ERC-20 token contract must implement.
 
-##### Functions
+### Functions
 **transfer(address to, uint256 value) external returns (bool);**
 
 Purpose: Transfers value amount of tokens from the caller's account to the to address.
@@ -158,7 +158,7 @@ View: Like totalSupply, this function is read-only.
 Purpose: Returns the remaining number of tokens that the spender is allowed to spend on behalf of the owner.
 View: This function also does not modify the state.
 
-##### Events
+### Events
 **event Transfer(address indexed from, address indexed to, uint256 value);**
 
 Purpose: This event is emitted when tokens are transferred, whether through transfer or transferFrom. The indexed keyword allows for easier filtering of logs by from or to addresses.
@@ -166,7 +166,7 @@ Purpose: This event is emitted when tokens are transferred, whether through tran
 **event Approval(address indexed owner, address indexed spender, uint256 value);**
 
 Purpose: This event is emitted when the approve function is called, indicating that the spender has been approved to spend value tokens on behalf of the owner.
-##### Summary
+### Summary
 The IERC20Token interface defines the core functions and events necessary for any ERC-20 token implementation, ensuring standardization and interoperability within the Ethereum ecosystem. Implementing this interface allows other contracts and applications to interact with the token seamlessly.
 
 ```
