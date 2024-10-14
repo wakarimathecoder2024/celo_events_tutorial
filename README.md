@@ -55,7 +55,7 @@ The following summary captures Celo's key strengths very well. Let me expand on 
      ▪ Remittance services
        That allow users to send funds internationally in a matter of seconds.
 
-5. ###### 3. DeFi
+5. ##### DeFi
    Decentralized finance services that can cater to mobile users globally. Celo’s developer ecosystem supports Ethereum tools like Solidity and Truffle, making it easy 
    for Ethereum developers to transition to Celo.
 
@@ -68,7 +68,7 @@ Overall, Celo aims to create a more inclusive financial system by leveraging the
   
 - Understanding of Smart Contracts: Know what smart contracts are and how they function within a blockchain environment.
   
-- Knowledge of Solidity: A foundational grasp of Solidity and its core concepts. Click here to learn more about Solidity.
+- Knowledge of Solidity: A foundational grasp of Solidity and its core concepts.
   
 
 ## Requirements
