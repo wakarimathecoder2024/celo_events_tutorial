@@ -24,11 +24,14 @@ Celo’s main innovation is its emphasis on mobile devices. While many blockchai
 ##### Stablecoins:
 Celo has built-in support for stablecoins, such as cUSD (Celo Dollar), which are pegged to the value of their respective fiat currencies. Stablecoins offer several benefits:
 
-**Stable Value**: Reduces the volatility commonly associated with cryptocurrencies like Bitcoin or Ethereum, making them more practical for everyday transactions.
+###### Stable Value
+Reduces the volatility commonly associated with cryptocurrencies like Bitcoin or Ethereum, making them more practical for everyday transactions.
 
-**User Adoption**: Pegging to familiar fiat currencies encourages users to adopt and integrate stablecoins into their daily financial lives.
+###### User Adoption
+Pegging to familiar fiat currencies encourages users to adopt and integrate stablecoins into their daily financial lives.
 
-**Efficient Remittances**: Users can send stablecoins across borders with minimal fees, addressing challenges in regions where remittances are crucial for income.
+###### Efficient Remittances
+Users can send stablecoins across borders with minimal fees, addressing challenges in regions where remittances are crucial for income.
 
 ##### Scalability and Speed:
 Celo’s Proof of Stake (PoS) consensus mechanism enables fast and scalable transactions. Unlike Proof of Work (PoW), PoS is much more efficient in terms of both speed and resource usage. Celo’s network can handle a significant number of transactions per second (TPS) at lower fees, which is essential for supporting a high volume of microtransactions often required in mobile payments. Additionally, Celo’s PoS allows participants to stake tokens and earn rewards, fostering a decentralized and secure network.
@@ -39,11 +42,13 @@ With growing concerns over the environmental impact of blockchain technology (pa
 ##### Decentralized Applications (dApps): 
 Celo enables developers to build decentralized applications (dApps) that leverage the platform’s mobile-first approach and stablecoin features. This opens up possibilities for various use cases, including:
 
-**Micro-lending platforms**: That provide users in underbanked regions access to credit.
+###### 1. Micro-lending platforms That provide users in underbanked regions access to credit.
 
-**Remittance services**: That allow users to send funds internationally in a matter of seconds.
+###### 2. Remittance services
+That allow users to send funds internationally in a matter of seconds.
 
-**DeFi**: Decentralized finance services that can cater to mobile users globally. Celo’s developer ecosystem supports Ethereum tools like Solidity and Truffle, making it easy for Ethereum developers to transition to Celo.
+###### 3. DeFi
+Decentralized finance services that can cater to mobile users globally. Celo’s developer ecosystem supports Ethereum tools like Solidity and Truffle, making it easy for Ethereum developers to transition to Celo.
 
 
 Overall, Celo aims to create a more inclusive financial system by leveraging the accessibility of mobile technology and the benefits of blockchain.
