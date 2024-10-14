@@ -1,6 +1,4 @@
 # EVENTS_SMART CONTARCT TUTORIAL
-## Table Of Contents
-
 
 ## Table of Contents
 - [Introduction](#introduction)
