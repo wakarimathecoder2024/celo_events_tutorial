@@ -18,7 +18,7 @@ This tutorial assumes that you have a basic understanding of Ethereum and Solidi
 
 Celo is a blockchain platform designed specifically for mobile devices and focused on making cryptocurrency accessible to everyone. 
 The following summary captures Celo's key strengths very well. Let me expand on each of these features to provide a deeper understanding of what makes Celo a unique and powerful blockchain platform:
-##### First item Mobile-First Design: 
+1. ##### Mobile-First Design: 
 Celo’s main innovation is its emphasis on mobile devices. While many blockchain platforms are designed for desktop use, Celo’s infrastructure is optimized for mobile, which is vital in regions where smartphones are the primary means of internet access. This allows users with limited technical expertise and access to traditional banking services to send and receive payments with ease. Celo achieves this through features like lightweight mobile wallets that don’t require users to run a full node, and by allowing users to send crypto using phone numbers instead of cryptographic addresses, making transactions more user-friendly.
 
 ##### Stablecoins:
