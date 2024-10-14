@@ -237,9 +237,9 @@ This is the name of the contract. Naming conventions typically use PascalCase, a
 
 Let’s break down the code snippet provided above, which defines some components for an event management smart contract in Solidity.
 
-### Components Explained
+## Components Explained
 
-1. ####  State Variables
+###  State Variables
 
 **uint256 private eventscount = 0;**
 
@@ -253,7 +253,7 @@ example
 
 This mapping tracks bookings made by users. It maps a user's Ethereum address to an array of Booking structs, allowing each user to have multiple bookings.
 
-2. ###### Events
+### Events
 Events serves as notifications that occur when specific actions take place within the contract.
 It helps external applications (like dApps) listen for and respond to new events being added to the system.
 example
@@ -269,7 +269,7 @@ example
 
 This event is emitted when a booking is made. It records the user's address, the event ID, and the name of the event.
 
-3. ######  Structs
+###  Structs
 This is a custom data type that allows you to group together variables of diffrent data types. Structs are particularly useful for organizing related pieces of data.
 
 **struct Event**
