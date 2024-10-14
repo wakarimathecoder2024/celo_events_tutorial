@@ -166,7 +166,7 @@ Purpose: This event is emitted when tokens are transferred, whether through tran
 **event Approval(address indexed owner, address indexed spender, uint256 value);**
 
 Purpose: This event is emitted when the approve function is called, indicating that the spender has been approved to spend value tokens on behalf of the owner.
-### Summary
+### Summary of IERC20
 The IERC20Token interface defines the core functions and events necessary for any ERC-20 token implementation, ensuring standardization and interoperability within the Ethereum ecosystem. Implementing this interface allows other contracts and applications to interact with the token seamlessly.
 
 ```
